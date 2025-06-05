@@ -1,0 +1,11 @@
+{
+  "name": "Cydia",
+  "identifier": "com.ioosmeen.cydia",
+  "type": "package",
+  "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
+  "description": "Install Cydia (v1.1.36-4) on rootful iOS device using palera1n.",
+  "install": {
+    "type": "debian",
+    "url": "https://github.com/ioosmeen/cydia-loader-json-for-palera1n/raw/main/cydia.deb"
+  }
+}

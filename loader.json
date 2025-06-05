@@ -1,15 +1,23 @@
 {
-  "sources": [
+  "min_loader_version": "2.1",
+  "palera1n_version_with_min_loader": "2.0",
+  "min_bridge_bootstrapper_version": "1.0",
+  "footer_notice": "Report issues at https://github.com/palera1n/palera1n/issues!",
+  "contents": [
     {
-      "name": "Cydia",
-      "type": "package",
-      "identifier": "com.ioosmeen.cydia",
-      "url": "https://github.com/ioosmeen/cydia-loader-json-for-palera1n/raw/main/cydia.deb",
-      "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
-      "description": "Install Cydia (v1.1.36-4) on rootful iOS device using palera1n.",
-      "install": {
-        "type": "debian",
-        "url": "https://github.com/ioosmeen/cydia-loader-json-for-palera1n/raw/main/cydia.deb"
+      "platform": 2,
+      "rootful": {
+        "dotfile": "/.procursus_strapped",
+        "bootstraps": [],
+        "managers": [
+          {
+            "name": "Cydia",
+            "uri": "https://github.com/ioosmeen/cydia-loader-json-for-palera1n/raw/main/cydia.deb",
+            "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
+            "filePath": "/Applications/Cydia.app"
+          }
+        ],
+        "repositories": []
       }
     }
   ]

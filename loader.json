@@ -8,7 +8,15 @@
       "platform": 2,
       "rootful": {
         "dotfile": "/.procursus_strapped",
-        "bootstraps": [],
+        "bootstraps": [
+          {
+            "cfver": 1700,
+            "uri": "https://static.palera.in/bootstraps/iphoneos-arm64/1700/bootstrap-1700.tar.zst",
+            "bootstrap-debs": [
+              "https://static.palera.in/bootstraps/iphoneos-arm64/1700/dhinakg-keyring_2023.04.02_all.deb"
+            ]
+          }
+        ],
         "managers": [
           {
             "name": "Cydia",
@@ -17,7 +25,14 @@
             "filePath": "/Applications/Cydia.app"
           }
         ],
-        "repositories": []
+        "repositories": [
+          {
+            "Types": "deb",
+            "URIs": "https://repo.palera.in",
+            "Suites": "./",
+            "Components": ""
+          }
+        ]
       }
     }
   ]
